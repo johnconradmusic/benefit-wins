@@ -1,0 +1,12 @@
+---
+// This is the "Frontmatter" where we define variables
+const { amount, title, description } = Astro.props;
+---
+
+<div
+	class="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all"
+>
+	<div class="text-blue-600 font-black text-4xl mb-2">{amount}</div>
+	<h4 class="font-bold text-lg mb-2 text-slate-800">{title}</h4>
+	<p class="text-sm text-slate-500 leading-relaxed">{description}</p>
+</div>
